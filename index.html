@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href= todo.css>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    
+    <div class="todo__wrapper">
+
+        <div class="todo__priority-block" id="todo_high">
+            
+            <h2>High</h2>
+
+            <form onsubmit="() => false" class="todo__add-block">
+                <input class="input-add" id="inputHigh" type="text" placeholder="Добавить важных дел">
+                <button class="btn-add" id="btn-high"> <img src= add-icon.svg alt="Иконка добавить задачу"> </button>
+            </form>       
+
+        </div>
+
+
+
+        <div class="todo__priority-block" id="todo_low">
+            
+            <h2 class="low">Low</h2>
+
+            <form  onsubmit="() => false" class="todo__add-block">
+                <input class="input-add" id="inputLow" type="text" placeholder="Добавить">
+                <button class="btn-add" id="btn-low"> <img src= add-icon.svg alt="Иконка добавить задачу"> </button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="module" src=main.js>
+       
+    </script>
+
+</body>
+</html>
